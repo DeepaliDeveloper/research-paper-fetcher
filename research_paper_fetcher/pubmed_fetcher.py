@@ -74,7 +74,7 @@ def fetch_paper_details(pmid):
         }
     except requests.exceptions.RequestException as e:
         print(f"Error fetching paper details for PubMed ID {pmid}: {e}")
-        return None
+        return None 
 
 def save_to_csv(results, filename):
     """
